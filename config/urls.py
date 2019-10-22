@@ -19,5 +19,6 @@ from notey import views
 
 urlpatterns = [
     path('', views.notes_list, name='notes_list'),
+    # path('notes/<id>/', views.notelist_detail, name=notelist_detail),
     path('admin/', admin.site.urls),
 ]

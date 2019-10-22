@@ -7,11 +7,18 @@
   <title>Notey</title>
 </head>
 <body>
-  <h1>Notey</h1>
-  <ul>
-  {% for id, note in notes.items %}
-    <li>{{ notes }}</li>
-  {% endfor %}
-  </ul>
+  <div id="container">
+    <h1>Notey</h1>
+    <ul>
+    {% for id, note in notes.items %}
+      <li>
+        <div>{{ note.title }}</div>
+        <div>
+          {{ note.body }}
+        </div>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
 </body>
 </html>
