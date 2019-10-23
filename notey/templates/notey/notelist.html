@@ -1,24 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Notey</title>
-</head>
-<body>
+{% extends "notey/base.html" %}
+{% load static %}
+
+{% block content %}
   <div id="container">
-    <h1>Notey</h1>
     <ul>
     {% for id, note in notes.items %}
       <li>
-        <div>{{ note.title }}</div>
-        <div>
-          {{ note.body }}
-        </div>
+        <div class="note-title"><a href="/notey/{{ id }}">{{ note.title }}</a></div>
       </li>
     {% endfor %}
     </ul>
   </div>
-</body>
-</html>
+{% endblock %}

@@ -1,0 +1,30 @@
+* {
+  font-family: sans-serif, 'Courier New', Courier, monospace;
+  max-width: 90%;
+}
+
+body {
+  justify-content: center;
+}
+
+.main-header {
+  background-color: rgb(230, 144, 94);
+  height: 4rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+li {
+  font-size: 1.5rem;
+}
+
+.note-title {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+p {
+  font-size: 1rem;
+}

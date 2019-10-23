@@ -1,0 +1,9 @@
+{% extends "notey/base.html" %}
+{% load static %}
+
+{% block content %}
+  <div class="note-title">{{ note.title }}
+    <p class="note-detail">{{ note.body }}</p>
+  </div>
+{% endblock %}
+
