@@ -87,3 +87,17 @@ button .edit-button {
 .delete-button {
   font-family: 'Shadows Into Light', cursive;
 }
+
+label {
+  margin-left: 3rem;
+}
+
+.create-note {
+  size: 4rem;
+}
+
+#id_title {
+  width: 40%;
+  height: 1.25rem;
+  margin-bottom: 2rem;
+}
