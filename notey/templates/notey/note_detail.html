@@ -1,9 +1,19 @@
 {% extends "notey/base.html" %}
 {% load static %}
 
+{% block title %}Notey - {{ note.title }}{% endblock %}
+
 {% block content %}
-  <div class="note-title">{{ note.title }}
-    <p class="note-detail">{{ note.body }}</p>
-  </div>
+  <h3>{{ note.title }}</h3>
+    <small>
+      <a href="{% url 'notes_edit' pk=note.pk %}">Edit</a>
+      <a href="{% url 'notes_delete' pk=note.pk %}">Delete</a>
+    </small>
+  {% if note.description %}
+    <p>
+      {{ note.description }}
+    </p>
+  {% endif %}
+  
 {% endblock %}
 

@@ -1,0 +1,19 @@
+{% extends "notey/base.html" %}
+{% load static %}
+
+
+{% block content %}
+<h3 class="create">Delete "{{ note.title }}"?</h3>
+
+<p>This will permanentlt delete this note</p>
+
+<form action="" method="POST">
+    {% csrf_token %} 
+
+    <button type="submit" class="delete-button">Delete</button>
+
+</form>
+
+<p><a href='/'>Back</a></p>
+
+{% endblock %}
