@@ -17,7 +17,7 @@ def notes_create(request):
     form = NotesForm(request.POST)
     if form.is_valid():
       notes_list = form.save()
-      return redirect(to=notes_list)
+      return redirect(to='notes_list')
   else:
     form = NotesForm()
 
